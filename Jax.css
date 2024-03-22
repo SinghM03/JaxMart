@@ -77,3 +77,48 @@ body, html {
 
 
 /* Add more styles for additional sections */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .image-slideshow {
+        grid-template-columns: 1fr 1fr; /* Adjust to two images per row */
+    }
+}
+
+@media (max-width: 576px) {
+    #navbar {
+        flex-direction: column;
+        padding: 0.5rem 0; /* Reduce padding */
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0; /* Reset padding */
+    }
+
+    .navbar-links a {
+        padding: 0.5rem 0; /* Add padding to each link for easier tapping */
+    }
+
+    .section {
+        padding: 30px 10px; /* Reduce padding and add horizontal padding */
+    }
+
+    #section1, #section2, #section3, #section4, #section5, #section6 {
+        height: auto; /* Allow sections to expand vertically on small screens */
+    }
+
+    .image-slideshow {
+        grid-template-columns: 1fr; /* Stack images vertically */
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .image-slideshow {
+        grid-template-columns: 1fr 1fr; /* Adjust to two images per row */
+    }
+}
+/* Additional adjustments for other specific elements as needed */
+
