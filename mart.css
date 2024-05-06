@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; 
+}
+
+
+
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 2vh 2vw;
+    background-color: #a0d2eb;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+ul li ul.dropdown {
+    list-style: none;
+    display: none; 
+    position: absolute;
+    background-color: #a0d2eb;
+    left: 0;
+    top: 100%;  
+    width: 100%;  
+    z-index: 1000;  
+    min-width: 85px;
+}
+
+ul li ul.dropdown li {
+
+}
+
+ul li ul.dropdown li a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 2vw;  
+    margin-left: -15%;
+    font-size: 18px;
+    padding-top: 25%;
+    
+}
+
+ul li:hover ul.dropdown {
+    display: block;  
+}
+
+
+.mainPhoto{
+    background-color: brown;
+    overflow: hidden;
+    width: 100%;
+    height:34vh;
+    position: relative;
+
+}
+
+.gradiant{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(77, 71, 71, 0.363), #a0d2eb94);
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.coverPhoto{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .coverPhoto{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .mainPhoto{
+        width: 100%;
+        height: 100vh;
+        
+    }
+    
+}
+
+.openSection{
+    text-align: center;
+}
+
+.firstLine{
+    color: whitesmoke;
+    background-color: #a0d2eb;
+    font-size: 1.5rem;
+    padding: 2vh;
+}
+
+.secondLine{
+    font-size: 1.35rem;
+    color: #a0d2eb;
+    padding: 2vh;
+
+}
+
+.thirdLine{
+    background-color: #a0d2eb;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    padding: 2vh;
+
+}
+
+.deli{
+    width: 100vw;
+    height: 25vh;
+    overflow: hidden;
+    position: relative;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+.deliTitle{
+    text-decoration: none;
+    position: absolute;
+    color: whitesmoke;
+    top: 45%;
+    left: 47%;
+   
+}
+
+.deliImage{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .deliTitle{
+        text-decoration: none;
+        position: absolute;
+        color: whitesmoke;
+        top: 45%;
+        left: 47%;
+        font-size: 3rem;
+       
+    }
+    
+    .deliImage{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        
+    }
+
+    .deli{
+        width: 50vw;
+        height: 50vh;
+        overflow: hidden;
+        position: relative;
+    
+    }
+    
+}
+
+.copyright{
+    width: 100vw;
+    height: 15vh;
+    background-color: #a0d2eb;
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+.footerHeader{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.address{
+    float: right;
+}
+
+.ownerName{
+    padding-bottom: 2vh;
+}
