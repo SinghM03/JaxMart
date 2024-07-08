@@ -1,0 +1,31 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+.menu{
+    color: #556B2F;
+}
+
+.menuTitle{
+    text-align: center;
+}
+
+.menuTitleDisc{
+    text-align: center;
+    margin-top: -1vh;
+}
+
+
+.menu-category{
+    margin-left: 2vw;
+}
+
+li{
+    padding-top: 1vh;
+}
+
+.imageDiv{
+    text-align: center;
+}
