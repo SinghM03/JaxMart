@@ -1,31 +1,160 @@
-body, html{
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: white;
+}
+
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.top {
+    color: black;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    font-size: 12px;
+}
+
+.mid {
+    width: 100vw;
+    height: 70vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2)),
+                url('jaxMartPhone.png') no-repeat center top;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.bottom {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+.bottom p {
+    padding-top: 3vh;
+}
+
+@media only screen and (min-width: 768px) {
+    .mid {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2)),
+                    url('jaxMarrDesktop.png') no-repeat center bottom;
+        background-size: cover;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+
+    .menu {
+        font-size: 1.5em;
+        display: none;
+    }
+
+    .rightTitle{
+        list-style-type: none;
+        display: flex;
+        text-decoration: none;
+
+    }
+    
+    .rightTitle li{
+        margin-left: 10vw;
+        font-weight: bold;
+        font-size: 1em;
+        text-decoration: none;
+
+    }
+
+    .rightTitleMobile{
+        display: none;
+    }
+
+    .deliTitle{
+        display: none;
+    }
+}
+
+
+
+.leftTitle{
+    text-decoration: none;
+    list-style-type: none;
+    text-align: left;
+}
+
+.listJax{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.listDesc{
+    font-size: 1em;
+}
+
+.rightTitle{
+
+}
+
+.rightTitle li{
+
+}
+a:link { 
+    text-decoration: none; 
+  } 
+  a:visited { 
+    text-decoration: none; 
+  } 
+  a:hover { 
+    text-decoration: none; 
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
+
+@media only screen and (max-width: 768px) 
+{
+    .rightTitleMobile{
+        display: none;
+    }
+
+    .rightTitle{
+        list-style-type: none;
+        display: none;
+        margin-right: 5vw;
+        text-decoration: none;
+    }
+    
+    .rightTitle li{
+        padding-top: .75vh;
+        text-decoration: none;
+
+    }
+
+    .deliTitle{
+        font-size: 1.75em;
+        margin-right: 5vw;
+    }
+}
+
+.menuSec{
+    width: 100%;
+    height: 100vh;
     background-color: antiquewhite;
-}
-.menu{
-    color: #556B2F;
+
 }
 
-.menuTitle{
-    text-align: center;
-}
-
-.menuTitleDisc{
-    text-align: center;
-    margin-top: -1vh;
-}
-
-
-.menu-category{
-    margin-left: 2vw;
-}
-
-li{
-    padding-top: 1vh;
-}
-
-.imageDiv{
-    text-align: center;
-}
