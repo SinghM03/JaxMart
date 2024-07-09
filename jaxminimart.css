@@ -83,6 +83,10 @@ body {
     .rightTitleMobile{
         display: none;
     }
+
+    .deliTitle{
+        display: none;
+    }
 }
 
 
@@ -130,7 +134,7 @@ a:link {
 
     .rightTitle{
         list-style-type: none;
-        display: block;
+        display: none;
         margin-right: 5vw;
         text-decoration: none;
     }
@@ -139,6 +143,11 @@ a:link {
         padding-top: .75vh;
         text-decoration: none;
 
+    }
+
+    .deliTitle{
+        font-size: 1.75em;
+        margin-right: 5vw;
     }
 }
 
